@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .heading {
+    background-color: grey;
+    text-align: center;
+  }
+  
+  #name,
+  nav,
+  footer {
+    background: white;
+    font-color: black;
+  }
+  
+  
+  nav {
+    position: fixed;
+    width: 57%;
+    float: right;
+    margin-left: 40%;
+    z-index: 10;
+    text-align: right;
+  }
+  
+  #name {
+    position: fixed;
+    width: 40%;
+    float: left;
+    margin-right: 10%;
+    z-index: 10;
+    text-align: left;
+  }
+  
+  
+  
+ header {
+    padding: 12% 0;
+  }
+
+  #about{
+    padding: 10% 10%;
+    background-color: grey;
+  }
+  
+  #projects {
+    padding: 10% 10%;
+    background-color: #bbb;
+  }
+  
+  .project-title {
+    font-size: 25px;
+  }
+  
+  .project-list {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .picture {
+    width: 20%;
+    height: 20%;
+    float: left;
+  }
+  
+  
+  .project-pic{
+    height: 80px;
+    width: 60px;
+    background-color: black;
+    margin: 0 auto;
+  }
+  
+  #contact{
+    padding: 10% 10%;
+    background-color: #ddd;
+  }
+  
+  .btn-logo{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
