@@ -3,3 +3,7 @@ function onLoad() {
   }
   
   $(onLoad)
+
+  function scrollToTop() { 
+    $(window).scrollTop(0); 
+}

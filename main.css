@@ -6,22 +6,28 @@
   body {
     font-size: 20px;
     color: black;
-    
-    /*line-height: 1.5;*/
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+    background-color:#EAE6E1;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 42px;
+}
 
   /*styling the header*/
   #top {
-    color: #F1FBFD;
-    font-size: 32px;
+    color: #5F636B;
+    font-size: 25px;
+    background-color: white;
     }
   
     /*styling the navbar*/
   nav {
     position: fixed;
     right: 2%;
-    z-index: 10000;
-
   }
   
   ul {
@@ -44,9 +50,8 @@
     display: block;
     position: fixed;
     left: 2%;
-    z-index: 10000;
-    font-size: 45px;
-    padding-top: 2%;
+    font-size: 25px;
+   
   }
 
 /*styling the background cover*/
@@ -58,87 +63,55 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    border: 3px solid black;
   }
 
+  /*styling my banner*/
   #heading{
     text-align: center;
     font-family: "Proza Libre";
     font-size: 50px;
-    color: #F1FBFD;
+    color: #F3DCD4;
   }
 
   header {
     padding: 12% 0;
   }
 
+  /*styling profile picture*/
   .lauraimg {
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 50%;
   }
 
+    /* styling "whi I am and What I am doing section */
   .bio {
     margin: 40px;
+    border-bottom: 10px solid black;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*************************************/
-/*adding a media query for larger screens*/
-@media only screen and (min-width: 800px) {
-  nav > ul {
-    display: block;
-  }
-
-  .navHidden {
-    display: block;
-  }
-
-  nav li {
-    float: left;
-  }
-
-  .burger {
-    display: none;
-  }
-
-  main {
-   display: flex;
- }
-  .product {
-   flex:1;
-  }
-
-  .project {
-    flex: 1
-  }
-}
-
-.quizimg {
+  /* styling project thumbnail images */
+.quizimg,
+.pigimg {
   border: 2px solid black;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
 }
-
-/*************************************/
-  
+ /* styling project container */
+ .project {
+  margin: 10% 10%;
+}
+  /* styling each individual project */
   #projects {
     padding: 10% 10%;
-    background-color: lightgray;
+    border: 6px solid black;
   }
-  
+
   .project-title {
     font-size: 25px;
   }
   
+  /* making sure the projects wrap nicely when the screen size changes */
   .project-list {
     font-size: 15px;
     display: flex;
@@ -146,27 +119,54 @@
     justify-content: space-around;
   }
   
-  .picture {
-    width: 20%;
-    height: 20%;
-    float: left;
+/* styling the contact section */
+  #contact {
+      display: flex;
+      justify-content: center;
+      align-content: space-between;
   }
-  
-  
-  .project-pic{
-    height: 80px;
-    width: 60px;
-    background-color: black;
-    margin: 0 auto;
+/* putting space between the logo images */
+  .logo{
+    margin: 10% 10%;
+    }
+
+    /*adding a media query for larger screens*/
+  @media only screen and (min-width: 800px) {
+    nav > ul {
+      display: block;
+    }
+
+    .navHidden {
+      display: block;
+    }
+
+    nav li {
+      float: left;
+    }
+
+    .burger {
+      display: none;
+    }
+
+    main {
+    display: flex;
   }
-  
-  #contact{
-    padding: 10% 10%;
-    background-color: #ddd;
-  }
-  
-  .btn-logo{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-  }
+    .product {
+    flex:1;
+    }
+
+    .project {
+      flex: 1
+    }
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.scroll { 
+  height: 1000px; 
+} 
