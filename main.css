@@ -1,67 +1,134 @@
 * {
     box-sizing: border-box;
+    text-align: center;
   }
   
   body {
     font-size: 20px;
     color: black;
-    text-align: center;
-    line-height: 1.5;
-  }
-  
-  .heading {
-    text-align: center;
-    font-family: "Proza Libre";
+    
+    /*line-height: 1.5;*/
   }
 
+  /*styling the header*/
+  #top {
+    color: #F1FBFD;
+    font-size: 32px;
+    }
+  
+    /*styling the navbar*/
+  nav {
+    position: fixed;
+    right: 2%;
+    z-index: 10000;
+
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  nav > ul li {
+    display: block;
+    width: 100px;
+    background-color: none;
+    height: 20px;
+  }
+  
+  .navHidden {
+    display: none;
+  }
+
+  /*styling my name/logo(if I later choose to add one)*/
+  #name {
+    display: block;
+    position: fixed;
+    left: 2%;
+    z-index: 10000;
+    font-size: 45px;
+    padding-top: 2%;
+  }
+
+/*styling the background cover*/
   #cover {
     width: 100%;
     height: 100%;
-    background-image: url('https://iili.io/JrElHl.jpg');
+    background-image: url('https://iili.io/JrXgcu.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
-  
-  #name,
-  nav,
-  footer {
-    font-color: black;
+
+  #heading{
+    text-align: center;
+    font-family: "Proza Libre";
+    font-size: 50px;
+    color: #F1FBFD;
   }
-  
-  
-  nav {
-    position: fixed;
-    width: 57%;
-    float: right;
-    margin-left: 40%;
-    z-index: 10;
-    text-align: right;
-  }
-  
-  #name {
-    position: fixed;
-    width: 40%;
-    float: left;
-    margin-right: 10%;
-    z-index: 10;
-    text-align: left;
-  }
-  
-  
-  .section-title {
-    font-family: "Karla";
-  }
-  
- header {
+
+  header {
     padding: 12% 0;
   }
 
-  #about{
-    padding: 10% 10%;
-    background-color: white;
+  .lauraimg {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50%;
   }
+
+  .bio {
+    margin: 40px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************/
+/*adding a media query for larger screens*/
+@media only screen and (min-width: 800px) {
+  nav > ul {
+    display: block;
+  }
+
+  .navHidden {
+    display: block;
+  }
+
+  nav li {
+    float: left;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  main {
+   display: flex;
+ }
+  .product {
+   flex:1;
+  }
+
+  .project {
+    flex: 1
+  }
+}
+
+.quizimg {
+  border: 2px solid black;
+}
+
+/*************************************/
   
   #projects {
     padding: 10% 10%;
