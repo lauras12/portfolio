@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     text-align: center;
+    margin: 0;
   }
   
   body {
@@ -8,51 +9,63 @@
     color: black;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 300;
-    background-color:#EAE6E1;
+    background-color:#E1ECF0;
+    /*margin: 0px;*/
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
     font-size: 42px;
+    color: #003A64
 }
 
-  /*styling the header*/
-  #top {
-    color: #5F636B;
-    font-size: 25px;
-    background-color: white;
-    }
-  
-    /*styling the navbar*/
-  nav {
-    position: fixed;
-    right: 2%;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  nav > ul li {
-    display: block;
-    width: 100px;
-    background-color: none;
-    height: 20px;
-  }
-  
-  .navHidden {
-    display: none;
-  }
+/*styling the navbar*/
+.nav {
+  height: 40px;
+  width: 100%;
+  background-color:#E1ECF0;
+  position: fixed;
+  color: #54A2D2;
+}
 
-  /*styling my name/logo(if I later choose to add one)*/
-  #name {
-    display: block;
-    position: fixed;
-    left: 2%;
-    font-size: 25px;
-   
-  }
+.nav > .nav-header {
+  display: inline;
+  color: #54A2D2;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  float: left;
+  font-size: 22px;
+  color: black;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
 
 /*styling the background cover*/
   #cover {
@@ -63,18 +76,21 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    border: 3px solid black;
   }
 
   /*styling my banner*/
   #heading{
     text-align: center;
-    font-family: "Proza Libre";
+    font-family: 'Open Sans', sans-serif;
     font-size: 50px;
-    color: #F3DCD4;
+    color: #003A64;
+    text-shadow: -1px 2px 0 #E1ECF0,
+				1px 1px 0 #E1ECF0,
+				1px -1px 0 #E1ECF0;
+				-1px -1px 0 #000;
   }
 
-  header {
+  #header {
     padding: 12% 0;
   }
 
@@ -86,7 +102,7 @@
   }
 
     /* styling "whi I am and What I am doing section */
-  .bio {
+  .info {
     margin: 40px;
     border-bottom: 10px solid black;
   }
@@ -99,16 +115,16 @@
 }
  /* styling project container */
  .project {
-  margin: 10% 10%;
+  margin: 5% 10%;
 }
   /* styling each individual project */
   #projects {
     padding: 10% 10%;
-    border: 6px solid black;
   }
 
   .project-title {
     font-size: 25px;
+    color: #54A2D2
   }
   
   /* making sure the projects wrap nicely when the screen size changes */
@@ -120,6 +136,9 @@
   }
   
 /* styling the contact section */
+  .end {
+    border-top: 6px solid black;
+  }
   #contact {
       display: flex;
       justify-content: center;
@@ -129,29 +148,25 @@
   .logo{
     margin: 10% 10%;
     }
+  
+  button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    }
+  .scroll { 
+    height: 1000px; 
+    } 
+  
 
-    /*adding a media query for larger screens*/
+/*adding a media query for larger screens*/
   @media only screen and (min-width: 800px) {
-    nav > ul {
-      display: block;
-    }
-
-    .navHidden {
-      display: block;
-    }
-
-    nav li {
-      float: left;
-    }
-
-    .burger {
-      display: none;
-    }
-
-    main {
+    #about {
     display: flex;
   }
-    .product {
+    .bio {
     flex:1;
     }
 
@@ -160,13 +175,49 @@
     }
 }
 
-button {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-.scroll { 
-  height: 1000px; 
-} 
+/*adding a media query for smaller screens*/
+@media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #102345;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
