@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laura Sikora || Home</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="main.css">
     <script
     src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous"></script>
-    <pre><link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Open+Sans:300,400" rel="stylesheet"></pre>
-    <title>Laura Sikora || Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700%7COpen+Sans:300,400" rel="stylesheet">
 </head>
 <body>
-
-
   <!-- grouped nav and name together for better mobile display -->
-  <div id="top">
-      <nav id="navbar">
-        <div class="burger">&#9776;</div>
-        <ul class="navHidden">
-          <li><a href="#">Home</a></li>
-         <!--<li><a href="#">About</a></li>--> 
-         <!--<li><a href="#">Projects</a></li>--> 
-          <li><a href="mailto:lauraannsikora@gmail.com" target="_blank">Contact</a></li>
-        </ul>
-        <br style="clear:both;"/>
-      </nav>
-      <h1 id="name">Laura Sikora</h1>
-    </div>
+  <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          Laura Sikora
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      
+      <div class="nav-links">
+        <a href="#" target="_blank">Home</a>
+        <a href="mailto:lauraannsikora@gmail.com" target="_blank">Contact</a>
+      </div>
+  </div>
 
     <div id='cover'>
-        <header role="banner">
+        <section id="header">
             <h1 id="heading">Hi, I'm <br>Laura!</h1>
-        </header>
+        </section>
     </div>
 
     <main>
+      <div id="about">
     <!--ABOUT ME section-->
-        <section class="product">
+        <section class="bio">
            <img src="laura.jpg" alt="Laura Image" class="lauraimg" width="300" height="400"/>
         </section>
-        <section class="product bio">
+        <section class="bio info">
           <h2>Who I am & What I am doing</h2>
           <p>
-            I am an aspiring web developer and soon to be a recent graduate of the Web Development Career Path Bootcamp at Bloc. I have a passion for web design and love to create for web and mobile devices.
+            I am an aspiring web developer and soon to be a recent graduate of the Web Development Career Path Bootcamp at Bloc. I have a passion for web design and love to create for web and mobile devices. I would love to have the opportunity to be able to work on a team with great programmers to continue to learn from a knowledgeable community.  
             Originally from Chicago, I now spend the winter months in San Juan, Puerto Rico with my Black English Labrador puppy! 
             <br><br> Previously, I attended Newbury College in Boston studying Communications.  I have worked for Financial Companies focusing on Public Relations, Media Relations, Investor Relations, and Communications. Then I found out how cool web development was and decided to make it my full-time job.
             If I’m not in front of my laptop, I am probably going on a new adventure, golfing, reading on the beach, or trying to teach my puppy new tricks!
           </p>
         </section>
-    </main>
-
-
-
+      </div>
   <!--PROJECTS section -->
   <div id="projects"> 
     <h2>Projects</h2>
       <div class="project-list">
           <section class="project">
             <p class="project-title">Quiz App</p>
-            
             <img src="quizapp.jpg" alt="Quiz App Screenshot" class="quizimg"/>
             <p>This interactive quiz app allows users to test their knowledge on the island of Puerto Rico. This quiz app is intended for anyone who wants to see how much they know about the large Carribean Island. It was built to show my knowdelge of jQuery.
             <br><br>Tech Used: HTML | CSS | JavaScript | jQuery
             
-            <br><br><a href="https://github.com/lauras12/Puerto-Rico-Quiz-App">Repo</a>
-            <br><br><a href="https://lauras12.github.io/Puerto-Rico-Quiz-App/">Live Site</a></p>
+            <br><br><a href="https://github.com/lauras12/Puerto-Rico-Quiz-App" target=“_blank”>Repo</a>
+            <br><br><a href="https://lauras12.github.io/Puerto-Rico-Quiz-App/" target=“_blank”>Live Site</a></p>
         </section>
 
           <section class="project">
@@ -73,14 +75,14 @@
             <p>Simple game of Pig that lets two players take turn rolling dice. The game is for any two players to play at a time.  It was built to continue to continue using my knowedlge of JavaScript.
             <br>Tech used: HTML | CSS | JavaScript
             
-            <br><br><a href="https://github.com/lauras12/Pig-Game">Repo</a>
-            <br><br><a href="https://lauras12.github.io/Pig-Game/">Live Site</a></p>
+            <br><br><a href="https://github.com/lauras12/Pig-Game" target=“_blank”>Repo</a>
+            <br><br><a href="https://lauras12.github.io/Pig-Game/" target=“_blank”>Live Site</a></p>
         </section>
       </div>
   </div>
-  <h2>Contact</h2>
+  <h2 class="end">Contact</h2>
     <p><a href="mailto:lauraannsikora@gmail.com" target="_blank">Email me here!</a></p>
-</main>
+  </main>
 
 <!-- CONTACT section -->
 
