@@ -10,114 +10,202 @@
     font-family: 'Gothic A1', sans-serif;
     font-weight: 300;
     background-color:#E1ECF0;
+    /*margin: 0px;*/
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
     font-size: 42px;
-    color: #003A64;
+    color: #003A64
 }
 
-nav {
-    position: fixed;
-    color: #003A64;
-    background-color:#E1ECF0;
+/*styling the navbar*/
+.nav {
+  height: 40px;
+  width: 100%;
+  background-color:#E1ECF0;
+  position: fixed;
+  color: #54A2D2;
 }
-  ul {
-    list-style: none;
-  }
-  
-  nav > ul li {
-    display: inline-block;
-    width: 100%;
-    background-color: #E1ECF0;
-    height: 40px;
-    
-  }
-  
-  .navHidden {
-    displaY: none;
-  }
-  
 
-/*styling the section header*/
-    #header {
-        padding: 12% 0;
-    }
+.nav > .nav-header {
+  display: inline;
+  color: #54A2D2;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  float: left;
+  font-size: 26px;
+  color: black;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 26px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.nav {
+  font-size: 50px;
+}
+.nav > .nav-btn {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.nav > .nav-btn > label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+}
+.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > .nav-btn > label > span {
+  display: block;
+  width: 25px;
+  height: 10px;
+  border-top: 3px solid #102345;
+}
+.nav > .nav-links {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: #333;
+  height: 0px;
+  transition: all 0.3s ease-in;
+  overflow-y: hidden;
+  top: 50px;
+  left: 0px;
+}
+.nav > .nav-links > a {
+  display: block;
+  width: 100%;
+}
+.nav > #nav-check:not(:checked) ~ .nav-links {
+  height: 0px;
+}
+.nav > #nav-check:checked ~ .nav-links {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*styling the background cover*/
-    #cover {
-        width: 100%;
-        height: 100%;
-        background-image: url('https://iili.io/JLNr7V.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
+  #cover {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://iili.io/JPfYeR.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 
-/*styling the "Hi, I'm Laura*/
+  /*styling my banner*/
   #heading{
-    opacity: none;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 50px;
-    color: #003A64;
+    color: #E1ECF0;
+    text-shadow: -1px 2px 0 #003A64,
+				2px 2px 0 #003A64,
+				2px -2px 0 #003A64,
+				-2px -2px 0 #003A64;
   }
 
-  #about {
-      display: flex;
-      flex-wrap: nowrap;
+  #header {
+    padding: 12% 0;
   }
 
-/*styling profile picture*/
+  /*styling profile picture*/
   .lauraimg {
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 50%;
   }
 
-/* styling "who I am and What I am doing section */
-   .info {
+    /* styling "whi I am and What I am doing section */
+  .info {
     margin: 40px;
     border-bottom: 10px solid black;
   }
 
-/* styling project thumbnail images */
-  .quizimg {
-    border: 2px solid black;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
-    width: 170px;
-    height: 180px;
-    margin: 10px;
-  }
-  .pigimg {
-    border: 2px solid black;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
-    width: 200px;
-    height: 180px;
-    margin: 10px;
-  }
-
+  /* styling project thumbnail images */
+.quizimg,
+.pigimg,
+.cryptoimg {
+  border: 2px solid black;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+}
  /* styling project container */
-  .title {
-    margin: 40px;
-  }
-
-/* styling each individual project */
+ .project {
+  margin: 5% 10%;
+}
+  /* styling each individual project */
   #projects {
     padding: 5% 5%;
-
   }
 
-  .projects{
+  .title {
+    padding-bottom: 10%;
+  }
+  
+  /* making sure the projects wrap nicely when the screen size changes */
+  .project-list {
+    font-size: 50px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-
-
+  
+  p {
+    font-size: 24px;
+  }
+  
 /* styling the contact section */
-.end {
+  .end {
     border-top: 6px solid black;
   }
   #contact {
@@ -129,8 +217,7 @@ nav {
   .logo{
     margin: 10% 10%;
     }
-
-/* styling the button to scroll back up to the top */
+  
   button {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -142,49 +229,27 @@ nav {
     height: 1000px; 
     } 
   
-/* adding media query for smaller screens */
-  @media only screen and (max-width: 600px) {
 
-/* my profile pic will come up first followed by my bio/about */
-   #about {
-       flex-direction: column;
-   }
 
-/* projects will display one after another */
-   .projects {
-    flex-direction: column; 
-   }
 
+
+
+    
+
+/*adding a media query for larger screens*/
+  @media only screen and (min-width: 600px) {
+   
+}
+
+/*adding a media query for smaller screens*/
+@media (max-width:600px) {
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+  }  
+  #projects {
+  
+    margin: 0% 0%;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  }
