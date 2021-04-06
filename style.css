@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans";
+    sans-serif; 
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .heading {
+    text-align: center;
+    font-family: "Proza Libre";
+  }
+
+  #cover {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-photo/empty-sea-beach-background_74190-313.jpg?size=626&ext=jpg');
+    background-position: center;
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  /* Makes the image fixed in the viewpoint so that it doesn't move when 
+ the content height is greater than the image height */
+  background-attachment: fixed;
+  /* This is what makes the background image 
+ rescale based on itscontainer's size */
+  background-size: cover;
+  }
+  
+  #name,
+  nav,
+  footer {
+    font-color: black;
+  }
+  
+  
+  nav {
+    position: fixed;
+    width: 57%;
+    float: right;
+    margin-left: 40%;
+    z-index: 10;
+    text-align: right;
+  }
+  
+  #name {
+    position: fixed;
+    width: 40%;
+    float: left;
+    margin-right: 10%;
+    z-index: 10;
+    text-align: left;
+  }
+  
+  
+  .section-title {
+    font-family: "Karla";
+  }
+  
+ header {
+    padding: 12% 0;
+  }
+
+  #about{
+    padding: 10% 10%;
+    background-color: white;
+  }
+  
+  #projects {
+    padding: 10% 10%;
+    background-color: lightgray;
+  }
+  
+  .project-title {
+    font-size: 25px;
+  }
+  
+  .project-list {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .picture {
+    width: 20%;
+    height: 20%;
+    float: left;
+  }
+  
+  
+  .project-pic{
+    height: 80px;
+    width: 60px;
+    background-color: black;
+    margin: 0 auto;
+  }
+  
+  #contact{
+    padding: 10% 10%;
+    background-color: #ddd;
+  }
+  
+  .btn-logo{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
