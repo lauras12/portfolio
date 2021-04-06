@@ -21,7 +21,7 @@
 }
 
 /*styling the navbar*/
-.nav {
+/*.nav {
   height: 40px;
   width: 100%;
   background-color:#E1ECF0;
@@ -110,7 +110,53 @@
   height: calc(100vh - 50px);
   overflow-y: auto;
 }
+*/
 
+/* Style the navigation menu */
+
+#title {
+  color: #003A64;
+}
+.topnav {
+  overflow: hidden;
+  background-color:#003A64;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color:#ddd;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #f4f7f4;
+  color: white;
+}
 
 
 /*styling the background cover*/
@@ -122,6 +168,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    padding: 12% 0;
   }
 
   /*styling my banner*/
@@ -147,7 +194,7 @@
     border-radius: 50%;
   }
 
-    /* styling "whi I am and What I am doing section */
+    /* styling "what I am and What I am doing section */
   .info {
     margin: 40px;
     border-bottom: 10px solid black;
@@ -213,12 +260,6 @@
     } 
   
 
-
-
-
-
-    
-
 /*adding a media query for larger screens*/
   @media only screen and (min-width: 600px) {
    
@@ -230,9 +271,20 @@
     display: flex;
     flex-wrap: wrap;
   }  
-  #projects {
-  
-    margin: 0% 0%;
+  .project-list {
+    justify-content: center;
+    text-align: center;
   }
   
+  .img {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  p {
+    font-size: 12px;
+  }
+  #myLinks{
+    font-size: 24px;
+  }
   }

@@ -9,35 +9,29 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700%7COpen+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-  <!-- grouped nav and name together for better mobile display -->
-  <div class="nav">
-      <input type="checkbox" id="nav-check">
-      <div class="nav-header">
-        <div class="nav-title">
-          Laura Sikora
-        </div>
-      </div>
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-      
-      <div class="nav-links">
-        <a href="#" target="_blank">Home</a>
-        <a href="mailto:lauraannsikora@gmail.com" target="_blank">Contact</a>
-      </div>
-  </div>
 
-    <div id='cover'>
-        <section id="header">
-            <h1 id="heading">Hi, I'm <br>Laura!</h1>
-        </section>
-    </div>
+  <!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active" id="title">LAURA SIKORA</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#contact" class="navclass">Contact</a>
+    <a href="#home" class="navclass">Home</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<header id='cover'>
+    <h1 id="heading">Hi, I'm <br>Laura!</h1>
+  </header>
+    
 
     <main>
       <div id="about">
@@ -48,7 +42,7 @@
         <section class="bio info">
           <h2 class="title">Who I am & What I am doing</h2>
           <p>
-            I am an aspiring web developer and soon to be a recent graduate of the Web Development Career Path Bootcamp at Bloc. I have a passion for web design and love to create for web and mobile devices. I would love to have the opportunity to be able to work on a team with great programmers to continue to learn from a knowledgeable community.  
+            I am an aspiring web developer and soon to be a recent graduate of the Web Development Career Path Bootcamp at Bloc. With my passion for web design and love to create for web and mobile devices, I would love to have the opportunity to be able to work on a team with great programmers to continue to learn from a knowledgeable community.  
             Originally from Chicago, I now spend the winter months in San Juan, Puerto Rico with my Black English Labrador puppy! 
             <br><br> Previously, I attended Newbury College in Boston studying Communications.  I have worked for Financial Companies focusing on Public Relations, Media Relations, Investor Relations, and Communications. Then I found out how cool web development was and decided to make it my full-time job.
             If I’m not in front of my laptop, I am probably going on a new adventure, golfing, reading on the beach, or trying to teach my puppy new tricks!
@@ -61,55 +55,59 @@
         <h2>Projects</h2>
       </section>
        <section class="project-list">
-        <h4 class="project-title">Quiz App</h4>
-            <img src="quizapp.jpg" alt="Quiz App Screenshot" class="quizimg"/>
-            <p>This interactive quiz app allows users to test their knowledge on the island of Puerto Rico. This quiz app is intended for anyone who wants to see how much they know about the large Carribean Island. It was built to show my knowdelge of jQuery.
+       <div id="project-title"><h4 class="project-title">Quiz App</h4></div> 
+            <img src="quizapp.jpg" alt="Quiz App Screenshot" class="quizimg img"/>
+            <p>This interactive quiz app allows users to test their knowledge on the island of Puerto Rico. This quiz app is intended for anyone who wants to see how much they know about the large Caribbean Island. It was built to show my knowledge of jQuery.
             <br><br>Tech Used: HTML | CSS | JavaScript | jQuery
             <br><br><a href="https://github.com/lauras12/Puerto-Rico-Quiz-App" target=“_blank”>Repo</a>
             <br><br><a href="https://lauras12.github.io/Puerto-Rico-Quiz-App/" target=“_blank”>Live Site</a></p>
         </section>
-        
+        <br><br>
         <section class="project-list">
-          <h4 class="project-title">Pig Game</h4>
-          <img src="piggame.jpg" alt="Pig Game Screenshot" class="pigimg"/>
-          <p>Simple game of Pig that lets two players take turn rolling dice. The game is for any two players to play at a time.  It was built to continue to continue using my knowedlge of JavaScript.
+          <div id="project-title"><h4 class="project-title">Pig Game</h4></div>
+          <img src="piggame.jpg" alt="Pig Game Screenshot" class="pigimg img"/>
+          <p>Simple game of Pig that lets two players take turn rolling dice. The game is for any two players to play at a time.  It was built to continue using my knowledge of JavaScript.
           <br>Tech used: HTML | CSS | JavaScript
           <br><br><a href="https://github.com/lauras12/Pig-Game" target=“_blank”>Repo</a>
           <br><br><a href="https://lauras12.github.io/Pig-Game/" target=“_blank”>Live Site</a></p>
         </section>
+        <br><br>
 
         <section class="project-list">
           <h4 class="project-title">Crypto Info App</h4>
-          <img src="hack1.png" alt="App Home Screenshot" class="cryptoimg"/>
-          <p>Just one search away form finding the current price and collection of recent news articles from any cryptocurrency.  This app was created to allow users to easily be able to type in a cryptocurrency and the interface will display the currenct exchange info and a collection of recent news articles.
+          <img src="hack1.png" alt="App Home Screenshot" class="cryptoimg img"/>
+          <p>Just one search away from finding the current price and collection of recent news articles from any cryptocurrency.  This app was created to allow users to easily be able to type in a cryptocurrency and the interface will display the current exchange info and a collection of recent news articles.
           <br>Tech used: HTML | CSS | JavaScript | jQuery
           <br><br><a href="https://github.com/lauras12/CryptoInfo" target=“_blank”>Repo</a>
           <br><br><a href="https://lauras12.github.io/CryptoInfo/" target=“_blank”>Live Site</a></p>
         </section>
+        <br><br>
 
         <section class="project-list">
           <h4 class="project-title">Trail TRACK</h4>
-          <img src="trailtracks.png" alt="App Home Screenshot" class="trailsimg"/>
+          <img src="trailtracks.png" alt="App Home Screenshot" class="trailsimg img"/>
           <p>Trail Track is a Full-Stack mobile first responsive web application for all hikers alike! The user can create an account where he/she can save hikes into trails as a way to keep track of the various hikes the users does.
           <br>Front-End tech used: HTML5 | CSS3 | JavaScript | React.js front end framework | font-awesome | bcrypt
           <br>Back-End tech used: Node.js | Express.js | SQL | Postgres | Yelp API | JWTs | Axios 
-          <br> Testing & Deploymenet: Mocha | Chai | Enzyme | Heroku
+          <br> Testing & Deployment: Mocha | Chai | Enzyme | Heroku
           <br><br><a href="https://github.com/lauras12/nek-api" target=“_blank”>API Repo</a>
           <br><br><a href="https://github.com/lauras12/nek-client" target=“_blank”>APP Repo</a>
           <br><br><a href="https://nek-client.vercel.app/" target=“_blank”>Live Site</a></p>
         </section>
+        <br><br>
 
         <section class="project-list">
           <h4 class="project-title">Restaurant Finder</h4>
-          <img src="rfinder.png" alt="App Home Screenshot" class="rfinderimg"/>
-          <p>Restaurant Finder is a place where users can login and search for places to eat and let other know what they best like about the restaurant. This application was created to allow users to save and rate their favorite places. Being able to categorize different places as "having good vibes" or "having a great beer list and outdoor patio" are just some of the many ways users can categorize their saves venues.
+          <img src="rfinder.png" alt="App Home Screenshot" class="rfinderimg img"/>
+          <p>Restaurant Finder is a place where users can log in and search for places to eat and let others know what they best like about the restaurant. This application was created to allow users to save and rate their favorite places. Being able to categorize different places as "having good vibes" or "having a great beer list and outdoor patio" are just some of the many ways users can categorize their saves venues.
           <br>Front-End tech used: HTML5 | CSS3 | JavaScript | React.js front end framework | font-awesome | bcrypt
           <br>Back-End tech used: Node.js | Express.js | SQL | Postgres | Yelp API | JWTs | Axios 
-          <br> Testing & Deploymenet: Mocha | Chai | Enzyme | Heroku
+          <br> Testing & Deployment: Mocha | Chai | Enzyme | Heroku
           <br><br><a href="https://github.com/lauras12/rfinder-api" target=“_blank”>API Repo</a>
           <br><br><a href="https://github.com/lauras12/rfinder-app" target=“_blank”>APP Repo</a>
           <br><br><a href="https://rfinder-app.vercel.app/" target=“_blank”>Live Site</a></p>
         </section>
+        <br><br>
 
       </section>
     </div>
@@ -125,7 +123,7 @@
      <!--email logo-->
       <section class="logo">
         <a href="mailto:lauraannsikora@gmail.com" target="_blank" class="btn">
-          <img src="gmail_logo.jpg" class="btn-logo" alt="g-mail logo" width="30" height="25">
+          <img src="gmail_logo.jpg" class="btn-logo" alt="G-mail logo" width="30" height="25">
         </a>
       </section> 
 
