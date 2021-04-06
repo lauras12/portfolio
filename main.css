@@ -64,14 +64,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 .nav {
   font-size: 50px;
 }
@@ -121,17 +113,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*styling the background cover*/
   #cover {
     width: 100%;
@@ -175,7 +156,9 @@
   /* styling project thumbnail images */
 .quizimg,
 .pigimg,
-.cryptoimg {
+.cryptoimg,
+.trailsimg,
+.rfinderimg {
   border: 2px solid black;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
 }
